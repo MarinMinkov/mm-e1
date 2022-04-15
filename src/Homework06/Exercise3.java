@@ -38,7 +38,7 @@ public class Exercise3 {
 
         return numberOfWords + 1;
     }
-    // less code with no checks but works if there are no multiple blank spaces next to each other.
+
     static int countWordsAlternate (String text)
     {
         String [] textArr = text.split(" ");
