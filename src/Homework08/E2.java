@@ -9,7 +9,7 @@ public class E2 {
         final String lName;
         double salary;
 
-        Employee(int id, String fName, String lName, double salary) {
+        public Employee(int id, String fName, String lName, double salary) {
             this.id = id;
             this.fName = fName;
             this.lName = lName;
@@ -34,7 +34,7 @@ public class E2 {
             System.out.println(fName);
             System.out.println(lName);
             System.out.println(salary);
-            return null;
+            return id + " " + fName + " " + lName + " " + salary + ".";
         }
 
     }
