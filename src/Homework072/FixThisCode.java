@@ -36,8 +36,7 @@ public class FixThisCode {
             fileWriter.close();
         }
 
-        public static void main(String[] args) throws IOException
-        {
+        public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             String filePath = scanner.nextLine();
             int howManyTimesToPrintTheTextToFile;
@@ -52,7 +51,14 @@ public class FixThisCode {
                 System.out.println("Set a default value 1.");
             }
             String textToAdd = scanner.next();
-            printToFile(getFileWriter(filePath), textToAdd, howManyTimesToPrintTheTextToFile);
+            try
+            {
+                printToFile(getFileWriter(filePath), textToAdd, howManyTimesToPrintTheTextToFile);
+            }
+            catch (IOException e)
+            {
+                System.out.println("");
+            }
         }
     }
 
