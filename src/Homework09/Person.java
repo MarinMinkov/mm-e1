@@ -1,11 +1,8 @@
 package Homework09;
 
-import javax.sound.midi.Soundbank;
 import java.util.InputMismatchException;
 
-public class E1 {
-
-    static class Person{
+    public class Person{
         final String name, sex, religion, language, nationality, EGN, dateOfBirth;
         final int age;
         String job, country;
@@ -148,29 +145,49 @@ public class E1 {
                 System.out.println("Can take loan");
             }
         }
-    }
+
 
 
 
     public static void main(String[] args) {
 
         Person obj1 = new Person("Marin", "Male", "Christian", "Bulgarian", "Bulgarian", "9308158526", "Unemployed", "Bulgaria");
-        Person obj2 = new Person("Marin", "Male", "Orthodox", "Bulgarian", "Bulgarian", "9308158526", "QA", "Bulgaria");
-        Person obj3 = new Person("Marin", "Male", "Islam", "English", "USA", "9308158526", "QA", "USA");
-
+        American obj2 = new American("Marin", "Male", "Orthodox", "Bulgarian", "Bulgarian", "9308158526", "QA", "Bulgaria");
+        Italian obj3 = new Italian("Marin", "Male", "Islam", "English", "USA", "9308158526", "QA", "USA");
+        Bulgarian obj4 = new Bulgarian("Marin","Male","Christian","Bulgarian","Bulgarian","9652158749","QA","Bulgaria");
+        Child obj5 = new Child("Marin", "Male", "Orthodox", "Bulgarian", "Bulgarian", "9308158526", "QA", "Bulgaria");
+        System.out.println("Person");
         obj1.sayHello();
         obj1.celebrateEaster();
         obj1.isAdult();
         obj1.canTakeLoan();
+        System.out.println();
 
+        System.out.println("American");
         obj2.sayHello();
         obj2.celebrateEaster();
         obj2.isAdult();
         obj2.canTakeLoan();
+        System.out.println();
 
+        System.out.println("Italian");
         obj3.sayHello();
         obj3.celebrateEaster();
         obj3.isAdult();
         obj3.canTakeLoan();
+        System.out.println();
+
+        System.out.println("Bulgarian");
+        obj4.sayHello();
+        obj4.celebrateEaster();
+        obj4.isAdult();
+        obj4.canTakeLoan();
+        System.out.println();
+
+        System.out.println("Child");
+        obj5.sayHello();
+        obj5.celebrateEaster();
+        obj5.isAdult();
+        obj5.canTakeLoan();
     }
 }
